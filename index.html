@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="us">
+    <head>
+      <title>Sample Registration Form</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="author" content="Nyros Technologies">      
+      <!--style sheets-->
+      <link rel="stylesheet" href="includes/css/style.css" />
+      <link rel="stylesheet" href="includes/css/jquery-ui.css">
+     
+    </head>
+      <body>
+              <main><!-- main -->
+              
+                                 
+                 <section id="wrapper"><!-- section container -->
+                
+                   
+                  <form action="" name="f1" method="post" autocomplete="off" novalidate>
+                      <fieldset> 
+                          <legend>Register Form</legend>
+                          <div>
+                              <input type="text" name="fullname" placeholder="Full Name"  required="true"  min="5" max="10" msg="characters upto range 5,10" isvalidate="string"/>
+                          </div>
+                           <div>
+                              <input type="email" name="email" placeholder="Email" required="true" isValidate="email" msg="Invalid email format"/>
+                          </div>
+                          <div>
+                              <input type="password" name="password" placeholder="Password"  required="true" isValidate="alphanumeric" min="6" max="10" msg="password lenght between 6,10"/>
+                          </div>
+                           
+                          <div>
+                              <input type="text" name="phonenumber" placeholder="Phone Number"  required="true" isValidate="numeric" min="10" max="10" msg="invalid phone number"/>
+                          </div>
+                           
+                          <div>
+                            <div class="small">Gender</div>
+                            <fieldset>
+                            <input type="radio" name="sex" required="true"/>Male
+                              <input type="radio" name="sex" required="true"/>Female
+                             </fieldset>
+                              
+                          </div>
+                          <div class="small">Color</div>
+                            <fieldset>
+                            <input type="checkbox" name="color" required="true"/>red
+                              <input type="checkbox" name="color" required="true"/>green
+                             </fieldset>
+                              
+                          </div>
+                          
+                           <div style="margin-bottom: 5px;">
+                            <div class="small">Select Option</div>                           
+                              <select name="optionsel" required="true">
+                                <option value="">----SELECT-----</option>
+                                <option value="op1">Option-1</option>
+                                <option value="op1">Option-2</option>
+                                <option value="op1">Option-3</option>
+                                <option value="op1">Option-4</option>
+                              </select> 
+                          </div>
+                          
+                         
+                          <div>                              
+                              <textarea name="Address" placeholder="Address" required="true"></textarea>
+                          </div>    
+                          <input type="submit" name="submit"  value="Submit"/>
+                      </fieldset>    
+                  </form>
+               
+                
+                
+                 
+              </section><!-- ./section container -->
+            </main><!-- ./main -->
+      </body>
+      <!-- script files -->
+       <script src="includes/js/jquery.js"></script>        
+      <script src="includes/js/validate.js"></script>
+</html>
